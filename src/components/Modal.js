@@ -72,11 +72,15 @@ const ModalContainer = styled.nav`
 const Navigation = styled.ul`
     list-style: none;
     text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 `;
 
-const NavList = styled.li`
+const NavItem = styled.li`
     color: black;
-    margin-bottom: 2.2rem;
+    /* margin-bottom: 2.2rem; */
     transition: transform 0.1s ease;
 
     &:hover {
@@ -104,7 +108,7 @@ const Modal = ({ menuActive, activePage, changePage }) => {
         <ModalBackground menuActive={menuActive}>
             <ModalContainer>
                 <Navigation>
-                    <NavList>
+                    <NavItem>
                         <Link
                             activePage={checkActivePage('Home')}
                             onClick={() => {
@@ -113,8 +117,8 @@ const Modal = ({ menuActive, activePage, changePage }) => {
                         >
                             Home
                         </Link>
-                    </NavList>
-                    <NavList>
+                    </NavItem>
+                    <NavItem>
                         <Link
                             activePage={checkActivePage('About')}
                             onClick={() => {
@@ -123,8 +127,8 @@ const Modal = ({ menuActive, activePage, changePage }) => {
                         >
                             About
                         </Link>
-                    </NavList>
-                    <NavList>
+                    </NavItem>
+                    <NavItem>
                         <Link
                             activePage={checkActivePage('Contact')}
                             onClick={() => {
@@ -133,8 +137,8 @@ const Modal = ({ menuActive, activePage, changePage }) => {
                         >
                             Contact
                         </Link>
-                    </NavList>
-                    <NavList>
+                    </NavItem>
+                    <NavItem>
                         <Link
                             activePage={checkActivePage('Blog')}
                             onClick={() => {
@@ -143,8 +147,8 @@ const Modal = ({ menuActive, activePage, changePage }) => {
                         >
                             Blog
                         </Link>
-                    </NavList>
-                    <NavList>
+                    </NavItem>
+                    <NavItem>
                         <Link
                             activePage={checkActivePage('Careers')}
                             onClick={() => {
@@ -153,7 +157,7 @@ const Modal = ({ menuActive, activePage, changePage }) => {
                         >
                             Careers
                         </Link>
-                    </NavList>
+                    </NavItem>
                 </Navigation>
             </ModalContainer>
         </ModalBackground>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const Bar = styled.div`
@@ -30,7 +30,6 @@ const HamburgerContainer = styled.div`
 `;
 
 const Hamburger = ({ toggleMenu, menuActive }) => {
-    console.log(menuActive);
     return (
         <HamburgerContainer
             onClick={() => {

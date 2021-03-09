@@ -22,6 +22,7 @@ const NavbarContainer = styled.header`
     position: relative;
     z-index: 99999;
     background-color: white;
+
     @media (min-width: 1000px) {
         padding: 0;
     }
@@ -29,6 +30,7 @@ const NavbarContainer = styled.header`
 
 const Navigation = styled.ul`
     display: none;
+
     @media (min-width: 1000px) {
         display: flex;
     }
@@ -45,8 +47,10 @@ const Link = styled.a`
     font-size: 1.2rem;
     transition: all 0.1s ease-in;
     padding-bottom: 2px;
+
     &:hover {
         color: var(--Dark-Blue);
+
         &::after {
             display: block;
             content: '';
@@ -66,6 +70,7 @@ const Link = styled.a`
 const PrimaryButtonNavbar = styled(PrimaryButton)`
     display: none;
     margin-right: 5px;
+
     @media (min-width: 1000px) {
         display: block;
     }

@@ -42,6 +42,8 @@ const IntroductionContainer = styled.div`
 const Title = styled.h2`
     font-size: 2.2rem;
     font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 1rem;
 
     @media (min-width: 1000px) {
         font-size: 3rem;
@@ -52,7 +54,6 @@ const Title = styled.h2`
 
 const Body = styled.p`
     color: grey;
-    font-size: 1.2rem;
 
     @media (min-width: 1000px) {
         font-size: 1.45rem;
@@ -85,7 +86,7 @@ const InfoSectionContainer = styled.div`
 const InfoSubheading = styled.h3`
     color: var(--Dark-Blue);
     font-weight: 300;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     margin: 1rem 0rem 1rem 0rem;
 
     @media (min-width: 1000px) {

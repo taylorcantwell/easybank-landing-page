@@ -1,16 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
-import logo from '../images/Logo-white.png';
-import PrimaryButton from './PrimaryButton';
 import { ReactComponent as FacebookIcon } from '../images/icon-facebook.svg';
 import { ReactComponent as InstagramIcon } from '../images/icon-instagram.svg';
 import { ReactComponent as PinterestIcon } from '../images/icon-pinterest.svg';
 import { ReactComponent as TwitterIcon } from '../images/icon-twitter.svg';
 import { ReactComponent as YoutubeIcon } from '../images/icon-youtube.svg';
+import logo from '../images/Logo-white.png';
+import PrimaryButton from './PrimaryButton';
 
 const FooterContainer = styled.div`
     background-color: #2d314e;
     padding: 3rem 0rem;
+
     @media (min-width: 1000px) {
         padding: 5rem 0rem;
     }
@@ -32,6 +33,7 @@ const GridContainer = styled.div`
 
 const IconContainer = styled.div`
     grid-area: icons;
+
     @media (min-width: 1000px) {
     }
 `;
@@ -39,6 +41,7 @@ const IconContainer = styled.div`
 const Logo = styled.img`
     margin-bottom: 1.8rem;
     cursor: pointer;
+
     @media (min-width: 1000px) {
         margin-bottom: 3rem;
     }
@@ -73,6 +76,7 @@ const LinksTwo = styled(LinksOne)`
 
 const ButtonContainer = styled.div`
     grid-area: button;
+
     @media (min-width: 1000px) {
         text-align: right;
     }
@@ -96,11 +100,13 @@ const IconFlexBox = styled.div`
     width: 150px;
     margin: 0 auto 1.8rem auto;
     cursor: pointer;
+
     * {
         &:hover {
             filter: brightness(0.8);
         }
     }
+
     @media (min-width: 1000px) {
         margin: 0;
     }

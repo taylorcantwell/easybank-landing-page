@@ -32,8 +32,8 @@ const Wrapper = styled.div`
 
 const Title = styled.h3`
     font-weight: 500;
-    font-size: 1.4rem;
-    margin: 1rem 0;
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
     cursor: pointer;
 
     &:hover {
@@ -48,6 +48,7 @@ const Title = styled.h3`
 const Body = styled.p`
     color: grey;
     line-height: 1.6;
+    font-size: 0.9rem;
 
     @media (min-width: 1000px) {
         font-size: 1.1rem;

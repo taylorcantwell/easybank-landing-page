@@ -29,7 +29,7 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.h2`
-    font-size: 3rem;
+    font-size: 2.2rem;
     font-weight: 300;
     text-align: center;
     margin: 0 auto;
